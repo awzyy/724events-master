@@ -53,11 +53,11 @@ const Page = () => {
         </div>
       </section>
       <section className="EventsContainer" id="nos-realisations">
-        <h2 className="Title">Nos réalisations</h2>
+        <h2 className="Title" data-testid="events-test">Nos réalisations</h2>
         <EventList />
       </section>
       <section className="PeoplesContainer" id="notre-equipe">
-        <h2 className="Title">Notre équipe</h2>
+        <h2 className="Title" data-testid="team-test">Notre équipe</h2>
         <p>Une équipe d’experts dédiés à l’ogranisation de vos événements</p>
         <div className="ListContainer">
           <PeopleCard
@@ -116,7 +116,7 @@ const Page = () => {
     </main>
     <footer className="row">
       <div className="col presta">
-        <h3>Notre dernière prestation</h3>
+        <h3 data-testid="last-event-title">Notre dernière prestation</h3>
         <EventCard
             imageSrc={LastData?.cover !== undefined ? LastData.cover : ""}
             title={LastData?.title !== undefined ? LastData.title : ""}
