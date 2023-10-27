@@ -7,7 +7,7 @@ import Button, { BUTTON_TYPES } from "../../components/Button";
 
 const mockContactApi = () =>
   new Promise((resolve) => {
-    setTimeout(resolve, 200);
+    setTimeout(resolve, 800);
   });
 
 const Form = ({ onSuccess, onError }) => {
